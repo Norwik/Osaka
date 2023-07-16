@@ -2,7 +2,15 @@
 
 Kotlin Spring Boot Boilerplate
 
+
 ### Deployment
+
+To run the docker
+
+```bash
+$ docker build -t osaka:0.0.1 .
+$ docker run -d -p 8080:8080 --name osaka_app osaka:0.0.1
+```
 
 
 ### License
