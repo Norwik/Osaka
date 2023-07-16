@@ -5,7 +5,7 @@ Kotlin Spring Boot Boilerplate
 
 ### Deployment
 
-To run the docker
+To run with docker
 
 ```bash
 $ docker build -t osaka:0.0.1 .
