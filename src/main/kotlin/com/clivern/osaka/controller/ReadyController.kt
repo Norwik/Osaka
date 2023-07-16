@@ -29,16 +29,21 @@ package com.clivern.osaka.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import com.clivern.osaka.controller.ReadyStatus
 import org.springframework.http.ResponseEntity
 
 @RestController
 class ReadyController {
+
+    data class ReadyStatus (
+        val status: String
+    )
+
     @GetMapping("/_ready")
     fun index(): ResponseEntity<ReadyStatus> {
         val readyStatus = ReadyStatus (
             status = "OK"
         )
+
         return ResponseEntity.ok(readyStatus)
     }
 }

@@ -29,16 +29,20 @@ package com.clivern.osaka.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import com.clivern.osaka.controller.HealthStatus
 import org.springframework.http.ResponseEntity
 
 @RestController
 class HomeController {
+
+    data class HomeResponse (
+        val message: String
+    )
+
     @GetMapping("/")
-    fun index(): ResponseEntity<HealthStatus> {
-        val healthStatus = HealthStatus (
-            status = "OK"
+    fun index(): ResponseEntity<HomeResponse> {
+        val response = HomeResponse (
+            message = "Hello World"
         )
-        return ResponseEntity.ok(healthStatus)
+        return ResponseEntity.ok(response)
     }
 }

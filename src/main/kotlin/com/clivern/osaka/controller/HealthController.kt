@@ -29,11 +29,15 @@ package com.clivern.osaka.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import com.clivern.osaka.controller.HealthStatus
 import org.springframework.http.ResponseEntity
 
 @RestController
 class HealthController {
+    
+    data class HealthStatus (
+        val status: String
+    )
+
     @GetMapping("/_health")
     fun index(): ResponseEntity<HealthStatus> {
         val healthStatus = HealthStatus (
