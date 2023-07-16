@@ -86,7 +86,7 @@ build:
 
 
 ## ci: Run all CI tests.
-ci: check verify
+ci: check test build
 	@echo "\n==> All quality checks passed"
 
 
