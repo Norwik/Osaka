@@ -27,13 +27,13 @@
 
 package com.clivern.osaka.controller
 
+import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import org.springframework.http.ResponseEntity
 
 @RestController
 class HealthController {
-    
+
     data class HealthStatus (
         val status: String
     )

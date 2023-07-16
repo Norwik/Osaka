@@ -27,8 +27,8 @@
 
 package com.clivern.osaka
 
-import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
 class OsakaApplication
