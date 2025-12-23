@@ -8,7 +8,7 @@ WORKDIR /home/gradle/src
 
 RUN ./gradlew clean build
 
-FROM openjdk:22-jdk-slim
+FROM openjdk:25-jdk-slim
 
 RUN mkdir -p /app/releases
 RUN mkdir -p /app/configs
