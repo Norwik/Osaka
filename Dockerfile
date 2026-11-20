@@ -1,4 +1,4 @@
-FROM gradle:8.10-jdk17 as builder
+FROM gradle:9.9-jdk17 as builder
 
 RUN apt-get update -y &&  apt-get upgrade -y
 
